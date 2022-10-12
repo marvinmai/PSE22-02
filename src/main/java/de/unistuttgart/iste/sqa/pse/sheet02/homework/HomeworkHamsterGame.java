@@ -11,7 +11,7 @@ public class HomeworkHamsterGame extends InternalHomeworkHamsterGame {
 	/*
 	 * Confused Paule! Help Paule to walk through the territory and to bring all the
 	 * grains into his cave. In the process Paule should collect all grains on the
-	 * field and deposit them in his cave (lower left corner - row 6 * column 2 and
+	 * field and deposit them in his cave (lower left corner - row 4 * column 1 and
 	 * indexing starts with 0).
 	 */
 	@Override
@@ -45,9 +45,6 @@ public class HomeworkHamsterGame extends InternalHomeworkHamsterGame {
 		// TODO:implement
 
 		// Add further steps (comment + code) to collect all grains!
-		// TODO:implement
-
-		// Pick up grains in the cave
 		// TODO:implement
 
 		// Put down all grains in the cave
