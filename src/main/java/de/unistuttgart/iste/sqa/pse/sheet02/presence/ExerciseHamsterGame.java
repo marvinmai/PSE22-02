@@ -27,7 +27,7 @@ public class ExerciseHamsterGame extends InspectableSimpleHamsterGame {
 	 */
 	public void turnRight() {
 		// your code goes here. Do not change other parts of this class!
-		
+
 	}
 
 	/**

@@ -1,14 +1,14 @@
 # Exercise sheet 2
 
 ## Inhalt dieses Übungsblatts
-Dieses Repo beinhaltet die Projekte für das Übungsblatt 06. 
-Im Präsenzteil lernen Sie noch einmal etwas ausführlicher, wie man den Hamstersimulator bedient.
-Zudem werden Sie sich mit Objekten und deren Eigenschaften und Beziehungen auseinandersetzen.
-Desweiteren werden sie Hamsterinstanzen erzeugen und die verfügbaren Kommandos (sowie die Grenzen deren Einsetzbarkeit erforschen).
+This repository contains all projects for exercise sheet 06.
+In the presence part you will take an extensive look on how to use the hamster simulator. 
+Furthermore you will learn about objects, their properties and relations to other objects.
+Additionally you will create your own hamster instances and you will explore available commands (as well as their edge cases).
 
-Im Heimteil dürfen Sie Ihre im Präsenzteil erworbenen Kompetenzen nochmals erworbenen Kenntnisse unter Beweis stellen. 
-Dazu zählt die theoretische Betrachung von Objekten und das Arbeiten mit dem Hamstersimulator.
-Viel Erfolg!
+In the home part you will prove the skills you learned in the presence part. 
+For example you are going to take a theoretical view on objects and work with the hamster simulator again. 
+Have fun!
 
 ## Run the project
 - Open and run in Eclipse
