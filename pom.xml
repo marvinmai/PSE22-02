@@ -4,7 +4,7 @@
 	<groupId>de.unistuttgart.iste.sqa.pse</groupId>
 	<artifactId>exercise-sheet-02</artifactId>
 	<version>1.0.0</version>
-	<name>Sheet 02</name>
+	<name>Exercise Sheet 02</name>
 
 	<properties>
 		<hamster.version>5.0.0</hamster.version>
