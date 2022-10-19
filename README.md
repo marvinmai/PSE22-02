@@ -1,7 +1,6 @@
-# Exercise sheet 2
+# Exercise sheet 02
 
-## Inhalt dieses Übungsblatts
-This repository contains all projects for exercise sheet 06.
+This repository contains all projects for exercise sheet 02.
 In the presence part you will take an extensive look on how to use the hamster simulator. 
 Furthermore you will learn about objects, their properties and relations to other objects.
 Additionally you will create your own hamster instances and you will explore available commands (as well as their edge cases).
