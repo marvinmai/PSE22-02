@@ -55,5 +55,4 @@ public class ExerciseHamsterGame extends InspectableSimpleHamsterGame {
 	protected void run() {
 		// do nothing
 	}
-
 }
