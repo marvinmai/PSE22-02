@@ -24,7 +24,7 @@ public class HomeworkHamsterGame extends InternalHomeworkHamsterGame {
         move(5);
 
         // Pick up the first grain
-        paule.pickGrain();
+        pickGrainAndLog();
 
         // Turn in the direction of the second grain
         turnRight();
@@ -33,7 +33,7 @@ public class HomeworkHamsterGame extends InternalHomeworkHamsterGame {
         move(5);
 
         // Pick up the second grain
-        paule.pickGrain();
+        pickGrainAndLog();
 
         // Move to the third grain
         turnAround();
@@ -42,7 +42,7 @@ public class HomeworkHamsterGame extends InternalHomeworkHamsterGame {
         move(3);
 
         // Pick up the third grain
-        paule.pickGrain();
+        pickGrainAndLog();
 
         // Move to the fourth grain field
         turnAround();
@@ -54,7 +54,7 @@ public class HomeworkHamsterGame extends InternalHomeworkHamsterGame {
 
         // Pick up all the grains at this field
         while (paule.grainAvailable()) {
-            paule.pickGrain();
+            pickGrainAndLog();
         }
 
         // Move to the cave
@@ -67,8 +67,23 @@ public class HomeworkHamsterGame extends InternalHomeworkHamsterGame {
 
         // Put down all grains in the cave
         while (!paule.mouthEmpty()) {
-            paule.putGrain();
+            putGrainAndLog();
         }
+    }
+
+    private void pickGrainAndLog() {
+        paule.pickGrain();
+        logNumberOfGrainsOnField();
+    }
+
+    private void putGrainAndLog() {
+        paule.putGrain();
+        logNumberOfGrainsOnField();
+    }
+
+    private void logNumberOfGrainsOnField() {
+        paule.write("Grains on field: "
+                + game.getTerritory().getTotalGrainCount());
     }
 
     private void move(int count) {
