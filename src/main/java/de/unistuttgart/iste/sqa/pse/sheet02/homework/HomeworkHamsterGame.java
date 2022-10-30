@@ -71,21 +71,6 @@ public class HomeworkHamsterGame extends InternalHomeworkHamsterGame {
         }
     }
 
-    private void pickGrainAndLog() {
-        paule.pickGrain();
-        logNumberOfGrainsOnField();
-    }
-
-    private void putGrainAndLog() {
-        paule.putGrain();
-        logNumberOfGrainsOnField();
-    }
-
-    private void logNumberOfGrainsOnField() {
-        paule.write("Grains on field: "
-                + game.getTerritory().getTotalGrainCount());
-    }
-
     private void move(int count) {
         for (int i = 0; i < count; i++) {
             paule.move();
@@ -101,5 +86,20 @@ public class HomeworkHamsterGame extends InternalHomeworkHamsterGame {
     private void turnAround() {
         paule.turnLeft();
         paule.turnLeft();
+    }
+
+    private void pickGrainAndLog() {
+        paule.pickGrain();
+        logNumberOfGrainsOnField();
+    }
+
+    private void putGrainAndLog() {
+        paule.putGrain();
+        logNumberOfGrainsOnField();
+    }
+
+    private void logNumberOfGrainsOnField() {
+        paule.write("Grains on field: "
+                + game.getTerritory().getTotalGrainCount());
     }
 }
