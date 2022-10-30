@@ -8,47 +8,83 @@ package de.unistuttgart.iste.sqa.pse.sheet02.homework;
  */
 public class HomeworkHamsterGame extends InternalHomeworkHamsterGame {
 
-	/*
-	 * Confused Paule! Help Paule to walk through the territory and to bring all the
-	 * grains into his cave. In the process Paule should collect all grains on the
-	 * field and deposit them in his cave (lower left corner - row 4 * column 1 and
-	 * indexing starts with 0).
-	 */
-	@Override
-	protected void hamsterRun() {
-		// EXERCISE 2:
-		// Help Paule to walk through the territory and to bring all the grains
-		// into his cave.
+    /*
+     * Confused Paule! Help Paule to walk through the territory and to bring all the
+     * grains into his cave. In the process Paule should collect all grains on the
+     * field and deposit them in his cave (lower left corner - row 4 * column 1 and
+     * indexing starts with 0).
+     */
+    @Override
+    protected void hamsterRun() {
+        // EXERCISE 2:
+        // Help Paule to walk through the territory and to bring all the grains
+        // into his cave.
 
-		// Walk to the first grain
-		paule.move();
-		paule.move();
-		paule.move();
-		paule.move();
-		paule.move();
+        // Walk to the first grain
+        move(5);
 
-		// Pick up the first grain
-		paule.pickGrain();
+        // Pick up the first grain
+        paule.pickGrain();
 
-		// Turn in the direction of the second grain
-		paule.turnLeft();
-		paule.turnLeft();
-		paule.turnLeft();
+        // Turn in the direction of the second grain
+        turnRight();
 
-		// You can remove this line
-		paule.write("I do not know how to continue:'(");
+        // Move to the second grain
+        move(5);
 
-		// Move to the second grain
-		// TODO:implement
+        // Pick up the second grain
+        paule.pickGrain();
 
-		// Pick up the second grain
-		// TODO:implement
+        // Move to the third grain
+        turnAround();
+        move(3);
+        paule.turnLeft();
+        move(3);
 
-		// Add further steps (comment + code) to collect all grains!
-		// TODO:implement
+        // Pick up the third grain
+        paule.pickGrain();
 
-		// Put down all grains in the cave
-		// TODO:implement
+        // Move to the fourth grain field
+        turnAround();
+        move(1);
+        turnRight();
+        move(3);
+        turnRight();
+        move(3);
 
-	}
+        // Pick up all the grains at this field
+        while (paule.grainAvailable()) {
+            paule.pickGrain();
+        }
+
+        // Move to the cave
+        turnAround();
+        move(3);
+        paule.turnLeft();
+        move(2);
+        paule.turnLeft();
+        move(3);
+
+        // Put down all grains in the cave
+        while (!paule.mouthEmpty()) {
+            paule.putGrain();
+        }
+    }
+
+    private void move(int count) {
+        for (int i = 0; i < count; i++) {
+            paule.move();
+        }
+    }
+
+    private void turnRight() {
+        paule.turnLeft();
+        paule.turnLeft();
+        paule.turnLeft();
+    }
+
+    private void turnAround() {
+        paule.turnLeft();
+        paule.turnLeft();
+    }
 }
