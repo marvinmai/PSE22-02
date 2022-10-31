@@ -15,6 +15,7 @@ public class ExerciseHamsterGame extends InspectableSimpleHamsterGame {
 	/**
 	 * Creates a new FirstHamsterGame
 	 */
+	//This is a test comment for git
 	public ExerciseHamsterGame() {
 		this.loadTerritoryFromResourceFile("/territories/territory.ter");
 		this.displayInNewGameWindow();
