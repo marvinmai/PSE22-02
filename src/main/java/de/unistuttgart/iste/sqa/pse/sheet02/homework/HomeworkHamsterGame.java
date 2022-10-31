@@ -3,8 +3,8 @@ package de.unistuttgart.iste.sqa.pse.sheet02.homework;
 /**
  * Describe the class HomeworkHamsterGame here.
  *
- * @author (Your name)
- * @version (a version number or a date)
+ * @author Paula Kostron, Marvin Mai
+ * @version 31.10.2022
  */
 public class HomeworkHamsterGame extends InternalHomeworkHamsterGame {
 
